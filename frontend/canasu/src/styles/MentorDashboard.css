@@ -1,0 +1,167 @@
+.mentordashboard {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: rgb(213, 247, 233);
+  display: flex;
+  /* position: fixed; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.sidebar {
+  width: 15%;
+  border-radius: 20px;
+  background-color: rgb(167, 244, 227);
+}
+
+.sidebar_out {
+  width: 15%;
+  border-radius: 20px;
+  background-color: rgb(167, 244, 227);
+  position: fixed;
+  height: 100%;
+}
+
+.mainContainer {
+  width: 100%;
+  border-radius: 20px;
+  /* overflow-y: scroll; */
+  margin: auto;
+}
+.mentorHeading {
+  margin: 10px;
+  border-radius: 12px;
+  background-color: rgb(181, 237, 239);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.bar-mentor {
+  display: flex;
+  flex-direction: row;
+}
+
+.headingDiv {
+  margin: 10px;
+  border-radius: 12px;
+  background-color: rgb(125, 213, 216);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.batchHeading {
+  font-weight: 700;
+}
+
+.batchBody {
+  padding: 50px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.logoMentor {
+  margin: auto;
+  margin-top: 5px;
+  width: 80%;
+  height: 15%;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.sections_mentor {
+  border-radius: 30px;
+  background-color: #83def3;
+  margin: auto;
+  margin-top: 15px;
+  width: 85%;
+  height: 80%;
+}
+
+.mentor_sidebar_names {
+  margin-top: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.mentor_sidebar_ind_names {
+  list-style: none;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  left: -12px;
+}
+
+.logoMentorh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoMentorh1 {
+  font-weight: 900;
+  position: relative;
+  top: 30%;
+}
+
+.logout_mentor {
+  background-color: #fff;
+  border-radius: 20px;
+  font-weight: 900;
+  height: 50px;
+  font-size: larger;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  left: -15px;
+}
+
+.student_joinbtn {
+  margin-top: 20px;
+  background-color: #9debf0;
+  padding: 0px 30px;
+  /* margin: 10px; */
+  border-radius: 20px;
+  border: 2px solid rgb(7, 160, 142);
+}
+
+.joinbtn{
+font-weight: 700;
+}
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .mentordashboard {
+    flex-basis: 100%; /* Change flex-basis to 100% for smaller screens */
+  }
+}
+@media (max-width: 768px) {
+  .mentordashboard {
+    /* flex: 0 calc(33.33% - 10px); Adjust flex properties for the desired number of items */
+  }
+}
+
+/* Media query for screens with a minimum width of 992px */
+@media (min-width: 992px) {
+  .mentordashboard {
+    flex: 1 0 33.33%; /* Change flex properties for larger screens */
+  }
+}
